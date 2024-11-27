@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sjcl/1.0.7/sjcl.min.js"></script>
+</head>
+<body>
+  <form name="myform">
+    Password: <input type="password" name="password" id="password"><br/>
+    Stuff:<br/><textarea name="stuff" id="stuff" placeholder="Enter message here."></textarea><br/>
+    <input type="button" name="encrypt" value="Encrypt">
+    <br/><br/>
+    Encrypted Stuff:<br/>
+    <textarea id="encrypted" readonly></textarea>
+    <br/>
+    <input type="button" name="decrypt" value="Decrypt">
+    <br/><br/>
+    Decrypted Stuff:<br/>
+    <textarea id="decrypted" readonly></textarea>
+  </form>
+
+  <!-- Referenciar el archivo JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
